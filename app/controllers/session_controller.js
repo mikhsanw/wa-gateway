@@ -75,3 +75,12 @@ exports.session = async (req, res, next) => {
     next(error);
   }
 };
+exports.status = async (req, res, next) => {
+  let example = {
+    up_time: Math.floor(process.uptime())
+  };
+  
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'application/json');
+  res.end(JSON.stringify('example'));
+};

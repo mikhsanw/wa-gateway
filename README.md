@@ -77,6 +77,19 @@ Open On Browser & Start New Session
 | `to`      | `string` | **Required**. Receiver Phone Number with Country Code (e.g: 62812345678) |
 | `text`    | `string` | **Required**. Text Message                                               |
 
+#### Send Text document
+
+```
+  POST /send-document
+```
+
+| Body      | Type     | Description                                                              |
+| :-------- | :------- | :----------------------------------------------------------------------- |
+| `session` | `string` | **Required**. Session Name You Have Created                              |
+| `to`      | `string` | **Required**. Receiver Phone Number with Country Code (e.g: 62812345678) |
+| `text`    | `string` | **Required**. Text Message                                               |
+| `document`| `string` | **Required**. Dokument / Image as url                                    |
+
 #### Send Bulk Message
 
 ```
